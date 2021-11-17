@@ -40,7 +40,7 @@ int tgeo;
 
 void input_1()
 {
-	printf("\n\t\t\t\tSTUDENT INFORMATION\n");
+	printf("\n\t\t\t\tSTUDENT INFORMATION\n\n\n");
 	printf("Enter name of student : ");
 	gets(name);
 	
@@ -241,7 +241,7 @@ void totals()
 }
 
 void display_1(){
-	printf("\n\t\t\t\tMARKSHEET\n\n\n");
+	printf("\n\t\t\t\tMARKSHEET\n\n\n\n");
 	
 	printf("Name             :\t %s",name);
 	printf("\nStandard         :\t %d",std);
@@ -279,17 +279,38 @@ void display_2()
     {
         printf("¯");
     }
+    
+    int y=37;
+    printf("\n\nPercentage \t:  %lf %c\n\n",percent,y);
 }
 
 void main()
 {
-	//input_1();
+	input_1();
 	input_2();
 	input_3();
 	totals();
 	system("cls");
-	//display_1();
+	display_1();
 	display_2();
-	//printf("\n");
+	
+	printf("\n\n");
+	int x=178;
+	int i;
+	for(i=0;i<=30;i++)
+	{
+		printf("%c",x);
+	}
+	printf("\n%c   Hemin Dhamelia     - 13   %c",x,x);
+	printf("\n%c   Kaustubh Digarse   - 14   %c",x,x);
+	printf("\n%c   Somil Doshi        - 15   %c",x,x);
+	printf("\n%c   Arya Dubey         - 16   %c\n",x,x);
+		
+	for(i=0;i<=30;i++)
+	{
+		printf("%c",x);
+	}
+	
+	printf("\n");
 	getch();
 }
